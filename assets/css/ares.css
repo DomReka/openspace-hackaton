@@ -82,6 +82,7 @@ a.link-sf:active:before {
 
 .text-crystal {
     color: rgba(255, 255, 255, .25);
+    font-size: 2em;
 }
 
 .text-white-op {

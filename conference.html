@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>Dashboard</title>
+
+        <meta name="description" content="A futuristic dashboard by pixelcave. You can download it from https://pixelcave.com">
+        <meta name="author" content="pixelcave">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+        <!-- Favicons (just the basics for now, check out http://realfavicongenerator.net/ for all available) -->
+        <link rel="shortcut icon" href="assets/img/Logo FleXboX.png">
+        <link rel="icon" type="image/png" href="assets/img/Logo FleXboX.png" sizes="32x32">
+
+        <!-- Web fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,600,700&Open+Sans:300,400,600,700">
+
+        <!-- Bootstrap and Ares CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/ares.css">
+    </head>
+    <body>
+        <!-- Page Container -->
+        <!--
+            Available Classes: 'modern-sf', 'vintage-sf', 'interstellar-sf'
+        -->
+        <div id="page-container" class="modern-sf">
+            <!-- Header -->
+            <header id="page-header">
+                <div class="h3 text-right pull-right hidden-xs">
+                    <div class="text-crystal font-w300">User</div>
+                </div>
+            </header>
+            <!-- END Header -->
+            <video id="videox" autoplay loop muted playsinline height="100%" width="100%">
+<source src="conferencevideo.mp4" type="video/mp4">
+<source src="conferencevideo.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+            <!-- Main Content -->
+            <!-- END Main Content -->
+        </div>
+        <!-- END Page Container -->
+
+        <!-- Scripts -->
+        <script src="assets/js/core/jquery.min.js"></script>
+        <script src="assets/js/plugins/jquery.appear.min.js"></script>
+        <script src="assets/js/plugins/jquery.countTo.min.js"></script>
+        <script src="assets/js/plugins/jquery.easypiechart.min.js"></script>
+        <script src="assets/js/ares.js"></script>
+
+        <!-- Page JS Code -->
+        <script>
+            jQuery(function(){
+                // Init page helpers (Appear + CountTo + Easy Pie Chart plugins)
+                Ares.initHelpers(['appear', 'appear-countTo', 'easy-pie-chart']);
+            });
+        </script>
+    </body>
