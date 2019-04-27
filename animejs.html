@@ -11,7 +11,7 @@
 
       <div class="elements">
           <h2>Configurations</h2>
-          <button class="config">
+          <button class="config" id="workBtn">
             Travail
             </button>
           <button class="config">
@@ -112,6 +112,7 @@
 
   <script>
 <<<<<<< HEAD
+<<<<<<< HEAD
     let config = document.querySelector("#configPresentation")
     config.addEventListener("click", ()=> {
       anime.timeline({})
@@ -168,6 +169,97 @@
       delay: 500,
     })
 >>>>>>> 024d6f57752155d9dd33ff673593a3ea0217f5e0
+=======
+    var tl = anime.timeline({
+      targets: '.cloison',
+      opacity: 0,
+      duration: 2000,
+      autoplay: false,
+      easing: 'linear',
+    });
+
+    tl
+      .add({
+        targets: '#grandeTable1',
+        duration: 2000,
+        delay: 2000,
+        translateX: '225px',
+        rotate: 90,
+        easing: 'linear', 
+        autoplay: false,
+      })
+      .add({
+        targets: '#grandeTable2',
+        duration: 2000,
+        offset: '-=2000',
+        translateX: '-225px',
+        rotate: -90,
+        easing: 'linear',
+        autoplay: false,
+      })
+      .add({
+        targets: '#grandeTable3',
+        duration: 2000,
+        offset: '-=2000',
+        translateY: '-50px',
+        translateX: '225px',
+        rotate: 90,
+        easing: 'linear', 
+        autoplay: false,
+      })
+      .add({
+        targets: '#grandeTable4',
+        duration: 2000,
+        offset: '-=1800',
+        translateY: '-50px',
+        translateX: '-225px',
+        rotate: -90,
+        easing: 'linear',
+        autoplay: false,
+      })
+      .add({
+        targets: '#chaise1',
+        duration: 2000,
+        offset: '-=2000',
+        translateX: '140px',
+        translateY: -100,
+        rotate: -90,
+        easing: 'linear', 
+        autoplay: false,
+      })
+      .add({
+        targets: '#chaise2',
+        duration: 2000,
+        offset: '-=2000',
+        translateX: '-150px',
+        translateY: -100,
+        rotate: 90,
+        easing: 'linear',
+        autoplay: false,
+      })
+      .add({
+        targets: '#chaise3',
+        duration: 2000,
+        offset: '-=2000',
+        translateX: 140,
+        translateY: -150,
+        rotate: -90,
+        easing: 'linear', 
+        autoplay: false,
+      })
+      .add({
+        targets: '#chaise4',
+        duration: 2000,
+        offset: '-=2000',
+        translateY: -150,
+        translateX: -150,
+        rotate: 90,
+        easing: 'linear',
+        autoplay: false,
+      })
+    document.querySelector('#workBtn').onclick = tl.play;
+
+>>>>>>> b7a0c7698026327d0734b4f19f54373e68829220
   </script>
 
 </body>
