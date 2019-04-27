@@ -11,7 +11,7 @@
 
       <div class="elements">
           <h2>Configurations</h2>
-          <button class="config" id="workBtn">
+          <button class="config">
             Travail
             </button>
           <button class="config">
@@ -35,15 +35,6 @@
       <img src="svg/cloison.svg" id="cloison6" class="cloison" />
       <img src="svg/cloisonVerticale.svg" id="cloison7" class="cloison" />
       <img src="svg/cloisonVerticale.svg" id="cloison8" class="cloison" />
-      <img src="svg/cloison.svg" id="cloison1" class="cloison"/>
-      <img src="svg/cloison.svg" id="cloison2" class="cloison"/>
-      <img src="svg/cloisonVerticale.svg" id="cloison3" class="cloison"/>
-      <img src="svg/cloisonVerticale.svg" id="cloison4" class="cloison"/>
-
-      <img src="svg/cloison.svg" id="cloison5" class="cloison"/>
-      <img src="svg/cloison.svg" id="cloison6" class="cloison"/>
-      <img src="svg/cloisonVerticale.svg" id="cloison7" class="cloison"/>
-      <img src="svg/cloisonVerticale.svg" id="cloison8" class="cloison"/>
 
       <img src="svg/grandeTable.svg" id="grandeTable1"/>
       <img src="svg/grandeTable.svg" id="grandeTable2"/>
@@ -58,9 +49,6 @@
       <img src="svg/cloison.svg" id="cloison9" class="cloison" />
       <img src="svg/cloison.svg" id="cloison10" class="cloison" />
       <img src="svg/cloison.svg" id="cloison11" class="cloison" />
-      <img src="svg/cloison.svg" id="cloison9" class="cloison"/>
-      <img src="svg/cloison.svg" id="cloison10" class="cloison"/>
-      <img src="svg/cloison.svg" id="cloison11" class="cloison"/>
 
       <img src="svg/divan.svg" id="divan1" />
       <img src="svg/divan.svg" id="divan2" />
@@ -153,101 +141,6 @@
       }])
 
     });
-    anime({
-      targets: '.cloison',
-      opacity: 0,
-      duration: 5000,
-      delay: 500,
-    })
-    var tl = anime.timeline({
-      targets: '.cloison',
-      opacity: 0,
-      duration: 2000,
-      autoplay: false,
-      easing: 'linear',
-    });
-
-    tl
-      .add({
-        targets: '#grandeTable1',
-        duration: 2000,
-        delay: 2000,
-        translateX: '225px',
-        rotate: 90,
-        easing: 'linear', 
-        autoplay: false,
-      })
-      .add({
-        targets: '#grandeTable2',
-        duration: 2000,
-        offset: '-=2000',
-        translateX: '-225px',
-        rotate: -90,
-        easing: 'linear',
-        autoplay: false,
-      })
-      .add({
-        targets: '#grandeTable3',
-        duration: 2000,
-        offset: '-=2000',
-        translateY: '-50px',
-        translateX: '225px',
-        rotate: 90,
-        easing: 'linear', 
-        autoplay: false,
-      })
-      .add({
-        targets: '#grandeTable4',
-        duration: 2000,
-        offset: '-=1800',
-        translateY: '-50px',
-        translateX: '-225px',
-        rotate: -90,
-        easing: 'linear',
-        autoplay: false,
-      })
-      .add({
-        targets: '#chaise1',
-        duration: 2000,
-        offset: '-=2000',
-        translateX: '140px',
-        translateY: -100,
-        rotate: -90,
-        easing: 'linear', 
-        autoplay: false,
-      })
-      .add({
-        targets: '#chaise2',
-        duration: 2000,
-        offset: '-=2000',
-        translateX: '-150px',
-        translateY: -100,
-        rotate: 90,
-        easing: 'linear',
-        autoplay: false,
-      })
-      .add({
-        targets: '#chaise3',
-        duration: 2000,
-        offset: '-=2000',
-        translateX: 140,
-        translateY: -150,
-        rotate: -90,
-        easing: 'linear', 
-        autoplay: false,
-      })
-      .add({
-        targets: '#chaise4',
-        duration: 2000,
-        offset: '-=2000',
-        translateY: -150,
-        translateX: -150,
-        rotate: 90,
-        easing: 'linear',
-        autoplay: false,
-      })
-    document.querySelector('#workBtn').onclick = tl.play;
-
   </script>
 
 </body>
