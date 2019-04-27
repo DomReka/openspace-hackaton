@@ -10,15 +10,15 @@
   <div id="content">
 
     <div class="openSpace">
-      <img src="svg/cloison.svg" id="cloison1" />
-      <img src="svg/cloison.svg" id="cloison2" />
-      <img src="svg/cloisonVerticale.svg" id="cloison3" />
-      <img src="svg/cloisonVerticale.svg" id="cloison4" />
+      <img src="svg/cloison.svg" id="cloison1" class="cloison"/>
+      <img src="svg/cloison.svg" id="cloison2" class="cloison"/>
+      <img src="svg/cloisonVerticale.svg" id="cloison3" class="cloison"/>
+      <img src="svg/cloisonVerticale.svg" id="cloison4" class="cloison"/>
 
-      <img src="svg/cloison.svg" id="cloison5" />
-      <img src="svg/cloison.svg" id="cloison6" />
-      <img src="svg/cloisonVerticale.svg" id="cloison7" />
-      <img src="svg/cloisonVerticale.svg" id="cloison8" />
+      <img src="svg/cloison.svg" id="cloison5" class="cloison"/>
+      <img src="svg/cloison.svg" id="cloison6" class="cloison"/>
+      <img src="svg/cloisonVerticale.svg" id="cloison7" class="cloison"/>
+      <img src="svg/cloisonVerticale.svg" id="cloison8" class="cloison"/>
 
       <img src="svg/grandeTable.svg" id="grandeTable1"/>
       <img src="svg/grandeTable.svg" id="grandeTable2"/>
@@ -30,9 +30,9 @@
       <img src="svg/chaise.svg" id="chaise3" />
       <img src="svg/chaise.svg" id="chaise4" />
 
-      <img src="svg/cloison.svg" id="cloison9" />
-      <img src="svg/cloison.svg" id="cloison10" />
-      <img src="svg/cloison.svg" id="cloison11" />
+      <img src="svg/cloison.svg" id="cloison9" class="cloison"/>
+      <img src="svg/cloison.svg" id="cloison10" class="cloison"/>
+      <img src="svg/cloison.svg" id="cloison11" class="cloison"/>
 
       <img src="svg/divan.svg" id="divan1" />
       <img src="svg/divan.svg" id="divan2" />
@@ -45,10 +45,7 @@
       <img src="svg/fauteuil.svg" id="fauteuil1" />
       <img src="svg/fauteuil.svg" id="fauteuil2" />
 
-      <!-- <img src="svg/chaise.svg"/>
-      <img src="svg/petiteTable.svg"/>
-      <img src="svg/grandeTable.svg"/>
-      <img src="svg/cloisonVerticale.svg"/> -->
+
     </div>
 
     <div class="elements">
@@ -81,7 +78,12 @@
   </div>
 
   <script>
-
+    anime({
+      targets: '.cloison',
+      opacity: 0,
+      duration: 5000,
+      delay: 500,
+    })
   </script>
 
 </body>
