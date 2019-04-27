@@ -22,3 +22,11 @@ cloison.src = "svg/cloison.svg";
 ctx.drawImage(cloison, 300, 300);
 ctx.drawImage(cloison, 300, 320);
 ctx.drawImage(cloison, 300, 340);
+
+let divan = new Image();
+divan.src = "svg/divan.svg";
+ctx.drawImage(divan, 100, 400);
+
+let fauteuil = new Image();
+fauteuil.src = "svg/fauteuil.svg";
+ctx.drawImage(fauteuil, 350, 400);
