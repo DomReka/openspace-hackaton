@@ -8,7 +8,7 @@ function validate(){
 
   if(username == login && password == pwd){
     alert('login succesfully');
-    window.location = "name file of julien";//redirecte à l'interface de l'user
+    window.location = "Control-panel.html";//redirige au panneau de contrôle de l'user
     return false;
   }
   else{
