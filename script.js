@@ -3,39 +3,39 @@ var ctx = canvas.getContext('2d');
 
 let chaise = new Image();
 chaise.src = "svg/chaise.svg";
-ctx.drawImage(chaise, 125, 160);
-ctx.drawImage(chaise, 525, 160);
-ctx.drawImage(chaise, 125, 410);
-ctx.drawImage(chaise, 525, 410);
+let chaise1 = ctx.drawImage(chaise, 125, 160);
+let chaise2 = ctx.drawImage(chaise, 525, 160);
+let chaise3 = ctx.drawImage(chaise, 125, 410);
+let chaise4 = ctx.drawImage(chaise, 525, 410);
 
 let petiteTable = new Image();
 petiteTable.src = "svg/petiteTable.svg";
-ctx.drawImage(petiteTable, 100, 625);
-ctx.drawImage(petiteTable, 400, 625);
+let petiteTable1 = ctx.drawImage(petiteTable, 100, 625);
+let petiteTable2 = ctx.drawImage(petiteTable, 400, 625);
 
 let grandeTable = new Image();
 grandeTable.src = "svg/grandeTable.svg";
-ctx.drawImage(grandeTable, 50, 50);
-ctx.drawImage(grandeTable, 450, 50);
-ctx.drawImage(grandeTable, 50, 300);
-ctx.drawImage(grandeTable, 450, 300);
+let grandeTable1 = ctx.drawImage(grandeTable, 50, 50);
+let grandeTable2 = ctx.drawImage(grandeTable, 450, 50);
+let grandeTable3 = ctx.drawImage(grandeTable, 50, 300);
+let grandeTable4 = ctx.drawImage(grandeTable, 450, 300);
 
 let cloison = new Image();
 cloison.src = "svg/cloison.svg";
-ctx.drawImage(cloison, 70, 20);
-ctx.drawImage(cloison, 430, 20);
-ctx.drawImage(cloison, 70, 270);
-ctx.drawImage(cloison, 430, 270);
-ctx.drawImage(cloison, 0, 550);
-ctx.drawImage(cloison, 200, 550);
-ctx.drawImage(cloison, 400, 550);
+let cloison1 = ctx.drawImage(cloison, 70, 20);
+let cloison2 = ctx.drawImage(cloison, 430, 20);
+let cloison3 = ctx.drawImage(cloison, 70, 270);
+let cloison4 = ctx.drawImage(cloison, 430, 270);
+let cloison5 = ctx.drawImage(cloison, 0, 550);
+let cloison6 = ctx.drawImage(cloison, 200, 550);
+let cloison7 = ctx.drawImage(cloison, 400, 550);
 
 let cloisonVerticale = new Image();
 cloisonVerticale.src = "svg/cloisonVerticale.svg";
-ctx.drawImage(cloisonVerticale, 260, 20);
-ctx.drawImage(cloisonVerticale, 430, 20);
-ctx.drawImage(cloisonVerticale, 260, 270);
-ctx.drawImage(cloisonVerticale, 430, 270);
+let cloisonVerticale1 = ctx.drawImage(cloisonVerticale, 260, 20);
+let cloisonVerticale2 = ctx.drawImage(cloisonVerticale, 430, 20);
+let cloisonVerticale3 = ctx.drawImage(cloisonVerticale, 260, 270);
+let cloisonVerticale4 = ctx.drawImage(cloisonVerticale, 430, 270);
 
 let divan = new Image();
 divan.src = "svg/divan.svg";
