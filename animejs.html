@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <link rel="stylesheet" href="./animejs.css">
+  <title>ta mère c'est de l'animejs</title>
+</head>
+<body>
+<div id="office">
+
+  <div id="pannel1"></div>
+
+  <div id="pannel2"></div>
+
+</div>
+
+  <script>
+    anime({
+      targets: '#pannel1',
+      translateX: 250,
+      delay: 1000,
+      duration: 2000,
+      rotate: 90,
+      easing: 'linear',
+    });
+  </script>
+
+</body>
+</html>

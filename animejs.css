@@ -1,0 +1,24 @@
+body {
+  padding: 50px;
+}
+
+#office {
+  width: 80%;
+  height: 80%;
+  display: grid;
+  background: #CCC;
+}
+
+#pannel1 {
+  background: #000;
+  width: 100px;
+  height: 20px;
+}
+
+#pannel2 {
+  background: #000;
+  width: 100px;
+  height: 20px;
+}
+
+
