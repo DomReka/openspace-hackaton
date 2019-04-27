@@ -13,7 +13,7 @@ function validate(){
   }
   else{
     attempt --;
-    alert ('You have left');
+    //alert ('You have left');
     //Impossible de se log après 3 essais
     if(attempt === 0){
       document.getElementById('username').disabled = true;

@@ -9,10 +9,10 @@ html, body {
 }
 
 body {
-    /* color: #e8f4ff; */
+    color: #e8f4ff;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
-    background-image: url(../img/bg_ares.jpg);
+    background-image: url(../../image/Marsbg.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -133,6 +133,10 @@ a.link-sf:active:before {
 .progress-bar-sf {
     background-color: rgba(98, 208, 240, .1);
 }
+.imgmoon{
+  position: fixed;
+  object-fit: cover;
+}
 
 /* Main Layout */
 #page-container {
@@ -150,7 +154,7 @@ a.link-sf:active:before {
 }
 
 #page-container.modern-sf:before {
-    background-color: rgba(0, 22, 41, .75);
+    background-color: rgba(0, 0,0, 1, .35);
 }
 
 #page-container.vintage-sf:before {
@@ -169,16 +173,22 @@ a.link-sf:active:before {
     background-color: rgba(0, 0, 0, .3);
 }
 
-#page-header {
-    padding: 25px 20px 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, .07);
-}
-
 #page-main {
     padding: 50px 20px 1px;
 }
 
+#videoconf{
+  color : #F5F5F5;
+}
+#videox{
+  text-align: center;width:100%;margin-left:auto;margin-right:auto;margin-bottom:35px;
+  padding-top: 50px;
+}
 /* Blocks */
+.col-xs-4 text-center animated fadeInLeft{
+  image: url(../img/bg_ares.jpg)
+
+}
 .block {
     margin-bottom: 20px;
     background-color: rgba(0, 0, 0, .15);
@@ -218,7 +228,7 @@ a.link-sf:active:before {
 .block-content.block-content-full {
     padding-bottom: 20px;
 }
-circles-main-contentcircles-main-content
+
 .block-content p,
 .block-content .push,
 .block-content .block {
@@ -240,27 +250,19 @@ circles-main-contentcircles-main-content
     border-radius: 50%;
 }
 
-input#submit{
-  /* background-color: rgba(135,206,235,0.75); */
-  /* background-color: rgba(0,206,209,1); */
-  border: none;
-  /* color: #FAEBD7; */
-  font-family: "futurist", "futuristic", Helvetica, Arial serif, sans-serif;
-}
-@font-face{
-  font-family: "futuristic";
-  font-weight: normal;
-  src: url('../../font/deceptibotsexpandital.ttf');
-}
 @font-face{
   font-family: "futurist";
-  font-weight: normal;
   src: url('../../font/Elianto-Regular.ttf');
 }
+
 label.text{
-    color: #FAEBD7;
-    font-family: "futurist", "futuristic", Helvetica, Arial, serif, sans-serif;
+  color: 	#D2691E;
+  font-family: "futurist", Helvetica, serif, sans-serif;
 }
+
+/*input#submit{
+  color: black;
+}*/
 
 .circles-main-content {
     top: 50%;
@@ -272,7 +274,7 @@ label.text{
     font-weight: 200;
     font-size: 1.5em;
     line-height: normal;
-
+    /* color: #fff; */
 }
 
 .circle-0 {
