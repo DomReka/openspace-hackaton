@@ -48,15 +48,3 @@ ctx.drawImage(divan, 375, 750);
 let fauteuil = new Image();
 fauteuil.src = "svg/fauteuil.svg";
 
-
-var TO_RADIANS = Math.PI/180;
-
-function drawRotatedImage(image, x, y, angle) {
-  ctx.save();
-  ctx.translate(x, y);
-  ctx.rotate(angle * TO_RADIANS);
-  ctx.drawImage(image, -(image.width/2), -(image.height/2));
-  ctx.restore();
-}
-
-drawRotatedImage(cloisonVerticale, 100, 100, 45)
