@@ -177,6 +177,13 @@ a.link-sf:active:before {
     padding: 50px 20px 1px;
 }
 
+#videoconf{
+  color : #F5F5F5;
+}
+#videox{
+  text-align: center;width:100%;margin-left:auto;margin-right:auto;margin-bottom:35px;
+  padding-top: 50px;
+}
 /* Blocks */
 .col-xs-4 text-center animated fadeInLeft{
   image: url(../img/bg_ares.jpg)
