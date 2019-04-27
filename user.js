@@ -1,5 +1,5 @@
 var attempt = 3;
-var login = "Louis"
+var login = "User"
 var pwd = "12345";
 function validate(){
   //récupère les valeurs entrée dans le form de panneau.html
@@ -12,12 +12,14 @@ function validate(){
     return false;
   }
   else{
+    alert('Username & password not valid');
     attempt --;
     viderForm();
     if(attempt === 0){
       document.getElementById('username').disabled = true;
       document.getElementById('password').disabled = true;
       document.getElementById('submit').disabled = true;
+      alert('Hostiles detected, Redirecting...');
       window.location = "404Page.html"
       return false;
     }
