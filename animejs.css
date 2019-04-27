@@ -110,25 +110,21 @@
 #chaise1 {
   grid-column: 6;
   grid-row: 10;
-  transform: rotate(180deg);
 }
 
 #chaise2 {
   grid-column: 34;
   grid-row: 10;
-  transform: rotate(180deg);
 }
 
 #chaise3 {
   grid-column: 6;
   grid-row: 23;
-  transform: rotate(180deg);
 }
 
 #chaise4 {
   grid-column: 34;
   grid-row: 23;
-  transform: rotate(180deg);
 }
 
 #cloison9 {

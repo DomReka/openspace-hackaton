@@ -20,18 +20,21 @@
           <button class="config">
             Repas de midi
           </button>
+          <button id="configPresentation" class="config">
+            Présentation
+          </button>
       </div>
 
     <div class="openSpace">
-      <img src="svg/cloison.svg" id="cloison1" />
-      <img src="svg/cloison.svg" id="cloison2" />
-      <img src="svg/cloisonVerticale.svg" id="cloison3" />
-      <img src="svg/cloisonVerticale.svg" id="cloison4" />
+      <img src="svg/cloison.svg" id="cloison1" class="cloison" />
+      <img src="svg/cloison.svg" id="cloison2" class="cloison" />
+      <img src="svg/cloisonVerticale.svg" id="cloison3" class="cloison" />
+      <img src="svg/cloisonVerticale.svg" id="cloison4" class="cloison" />
 
-      <img src="svg/cloison.svg" id="cloison5" />
-      <img src="svg/cloison.svg" id="cloison6" />
-      <img src="svg/cloisonVerticale.svg" id="cloison7" />
-      <img src="svg/cloisonVerticale.svg" id="cloison8" />
+      <img src="svg/cloison.svg" id="cloison5" class="cloison"/>
+      <img src="svg/cloison.svg" id="cloison6" class="cloison" />
+      <img src="svg/cloisonVerticale.svg" id="cloison7" class="cloison" />
+      <img src="svg/cloisonVerticale.svg" id="cloison8" class="cloison" />
 
       <img src="svg/grandeTable.svg" id="grandeTable1"/>
       <img src="svg/grandeTable.svg" id="grandeTable2"/>
@@ -43,9 +46,9 @@
       <img src="svg/chaise.svg" id="chaise3" />
       <img src="svg/chaise.svg" id="chaise4" />
 
-      <img src="svg/cloison.svg" id="cloison9" />
-      <img src="svg/cloison.svg" id="cloison10" />
-      <img src="svg/cloison.svg" id="cloison11" />
+      <img src="svg/cloison.svg" id="cloison9" class="cloison" />
+      <img src="svg/cloison.svg" id="cloison10" class="cloison" />
+      <img src="svg/cloison.svg" id="cloison11" class="cloison" />
 
       <img src="svg/divan.svg" id="divan1" />
       <img src="svg/divan.svg" id="divan2" />
@@ -90,7 +93,54 @@
   </div>
 
   <script>
+    let config = document.querySelector("#configPresentation")
+    config.addEventListener("click", ()=> {
+      anime.timeline({})
+      .add({
+        targets: '.cloison',
+        opacity: 0,
+        easing: 'linear',
+        duration: 2000,
+      })
+      .add([{
+        targets: '#chaise1',
+        translateX: '150px',
+        easing: 'linear',
+        duration: 1000,
+      }, {
+        targets: '#chaise2',
+        translateX: '-150px',
+        easing: 'linear',
+        duration: 1000,
+        offset: "-=1000",
+      }, {
+        targets: '#chaise3',
+        translateX: '150px',
+        easing: 'linear',
+        duration: 1000,
+        offset: "-=1000",
+      }, {
+        targets: '#chaise4',
+        translateX: '-150px',
+        easing: 'linear',
+        duration: 1000,
+        offset: "-=1000",
+      }])
+      .add([{
+        targets: ['#grandeTable1', '#grandeTable3'],
+        rotate: -90,
+        easing: 'linear',
+        duration: 2000,
+        delay: 1000,
+      },{
+        targets: ['#grandeTable2', '#grandeTable4'],
+        rotate: 90,
+        easing: 'linear',
+        duration: 2000,
+        offset: "-=2000",
+      }])
 
+    });
   </script>
 
 </body>
