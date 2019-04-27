@@ -13,8 +13,7 @@ function validate(){
   }
   else{
     attempt --;
-    //alert ('You have left');
-    //Impossible de se log après 3 essais
+    viderForm();
     if(attempt === 0){
       document.getElementById('username').disabled = true;
       document.getElementById('password').disabled = true;
@@ -23,4 +22,10 @@ function validate(){
       return false;
     }
   }
-}
+};
+
+function viderForm(){
+  document.getElementById('username').value = "";
+  document.getElementById('password').value = "";
+  return false;
+};
