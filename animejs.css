@@ -5,6 +5,16 @@
   height: 100vh;
 }
 
+.config {
+  border: none;
+  margin: 1rem;
+}
+
+.config:hover {
+  background-color: #A31;
+  cursor: pointer;
+}
+
 .openSpace {
   background-color: #ccc;
   display: grid;
