@@ -62,16 +62,16 @@
       <img src="svg/cloison.svg" id="cloison10" class="cloison"/>
       <img src="svg/cloison.svg" id="cloison11" class="cloison"/>
 
-      <img src="svg/divan.svg" id="divan1" />
-      <img src="svg/divan.svg" id="divan2" />
-      <img src="svg/divan.svg" id="divan3" />
-      <img src="svg/divan.svg" id="divan4" />
+      <img src="svg/divan.svg" id="divan1" class="salon"/>
+      <img src="svg/divan.svg" id="divan2" class="salon"/>
+      <img src="svg/divan.svg" id="divan3" class="salon"/>
+      <img src="svg/divan.svg" id="divan4" class="salon"/>
 
-      <img src="svg/petiteTable.svg" id="petiteTable1" />
-      <img src="svg/petiteTable.svg" id="petiteTable2" />
+      <img src="svg/petiteTable.svg" id="petiteTable1" class="salon"/>
+      <img src="svg/petiteTable.svg" id="petiteTable2" class="salon" />
 
-      <img src="svg/fauteuil.svg" id="fauteuil1" />
-      <img src="svg/fauteuil.svg" id="fauteuil2" />
+      <img src="svg/fauteuil.svg" id="fauteuil1" class="salon"/>
+      <img src="svg/fauteuil.svg" id="fauteuil2" class="salon"/>
 
     </div>
 
@@ -153,26 +153,20 @@
       }])
 
     });
-    anime({
-      targets: '.cloison',
-      opacity: 0,
-      duration: 5000,
-      delay: 500,
-    })
-    var tl = anime.timeline({
+
+    let tl = anime.timeline({
       targets: '.cloison',
       opacity: 0,
       duration: 2000,
       autoplay: false,
       easing: 'linear',
+      autoplay: false,
     });
-
-    tl
-      .add({
+    tl.add({
         targets: '#grandeTable1',
         duration: 2000,
-        delay: 2000,
-        translateX: '225px',
+        delay: 4444000,
+        translateX: '25px',
         rotate: 90,
         easing: 'linear', 
         autoplay: false,
@@ -181,7 +175,7 @@
         targets: '#grandeTable2',
         duration: 2000,
         offset: '-=2000',
-        translateX: '-225px',
+        translateX: '-425px',
         rotate: -90,
         easing: 'linear',
         autoplay: false,
@@ -191,7 +185,7 @@
         duration: 2000,
         offset: '-=2000',
         translateY: '-50px',
-        translateX: '225px',
+        translateX: '25px',
         rotate: 90,
         easing: 'linear', 
         autoplay: false,
@@ -201,7 +195,7 @@
         duration: 2000,
         offset: '-=1800',
         translateY: '-50px',
-        translateX: '-225px',
+        translateX: '-425px',
         rotate: -90,
         easing: 'linear',
         autoplay: false,
@@ -210,9 +204,9 @@
         targets: '#chaise1',
         duration: 2000,
         offset: '-=2000',
-        translateX: '140px',
+        translateX: '-60px',
         translateY: -100,
-        rotate: -90,
+        rotate: 90,
         easing: 'linear', 
         autoplay: false,
       })
@@ -220,9 +214,9 @@
         targets: '#chaise2',
         duration: 2000,
         offset: '-=2000',
-        translateX: '-150px',
+        translateX: '-350px',
         translateY: -100,
-        rotate: 90,
+        rotate: -90,
         easing: 'linear',
         autoplay: false,
       })
@@ -230,9 +224,9 @@
         targets: '#chaise3',
         duration: 2000,
         offset: '-=2000',
-        translateX: 140,
+        translateX: -60,
         translateY: -150,
-        rotate: -90,
+        rotate: 90,
         easing: 'linear', 
         autoplay: false,
       })
@@ -241,11 +235,28 @@
         duration: 2000,
         offset: '-=2000',
         translateY: -150,
-        translateX: -150,
-        rotate: 90,
+        translateX: -350,
+        rotate: -90,
         easing: 'linear',
         autoplay: false,
       })
+      .add({
+        targets: '.salon',
+        translateX: "300px",
+        offset: '-=2000',
+        duration: 2000,
+        easing: 'linear',
+        autoplay: false,
+      })
+      .add({
+        targets: '.cloison',
+        opacity: 1,
+        duration: 3000,
+        offset: '-=2000',
+        delay: 4000,
+        easing: 'linear',
+        autoplay: false,
+      });
     document.querySelector('#workBtn').onclick = tl.play;
 
   </script>
