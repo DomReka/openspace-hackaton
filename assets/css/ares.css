@@ -257,7 +257,7 @@ a.link-sf:active:before {
 }
 
 label.text{
-  color: 	#D2691E;
+  color: 	rgba(255, 255, 255, .65);
   font-family: "futurist", Helvetica, serif, sans-serif;
 }
 
