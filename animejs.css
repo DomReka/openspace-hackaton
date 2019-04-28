@@ -43,7 +43,7 @@
   max-height: 5rem;
 }
 
-<#cloison1 {
+#cloison1 {
   grid-column: 4;
   grid-row: 2;
 }
@@ -101,14 +101,9 @@
   grid-row: 17;
 }
 
-
 #grandeTable4 {
   grid-column: 30;
   grid-row: 17;
-}
-
-.chaise {
-  transform: rotate(180deg);
 }
 
 #chaise1 {

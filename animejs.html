@@ -127,13 +127,26 @@
         offset: "-=1000",
       }, {
         targets: '#chaise3',
-        translateX: '150px',
+        translateX: '225px',
         easing: 'linear',
         duration: 1000,
         offset: "-=1000",
       }, {
         targets: '#chaise4',
-        translateX: '-150px',
+        translateX: '-225px',
+        easing: 'linear',
+        duration: 1000,
+        offset: "-=1000",
+      }, {
+        targets: '#chaise3',
+        translateX: '225px',
+        translateY: '-250px',
+        easing: 'linear',
+        duration: 1000,
+      }, {
+        targets: '#chaise4',
+        translateX: '-225px',
+        translateY: '-250px',
         easing: 'linear',
         duration: 1000,
         offset: "-=1000",
@@ -143,7 +156,6 @@
         rotate: -90,
         easing: 'linear',
         duration: 2000,
-        delay: 1000,
       },{
         targets: ['#grandeTable2', '#grandeTable4'],
         rotate: 90,
@@ -151,14 +163,51 @@
         duration: 2000,
         offset: "-=2000",
       }])
-
+      .add({
+        targets: '#grandeTable1',
+        translateX: '-70px',
+        translateY: '-10px',
+        rotate: -90,
+        easing: 'linear',
+        duration: 1000,
+      })
+      .add({
+        targets: '#grandeTable2',
+        translateX: '70px',
+        translateY: '-10px',
+        rotate: 90,
+        easing: 'linear',
+        duration: 1000,
+        offset: "-=1000",
+      })
+      .add({
+        targets: '#grandeTable3',
+        translateX: '-70px',
+        translateY: '-70px',
+        rotate: -90,
+        easing: 'linear',
+        duration: 1000,
+        offset: "-=1000",
+      })
+      .add({
+        targets: '#grandeTable4',
+        translateX: '70px',
+        translateY: '-70px',
+        rotate: 90,
+        easing: 'linear',
+        duration: 1000,
+        offset: "-=1000",
+      })
+      .add({
+        targets: '#fauteuil2',
+        translateY: '-70px',
+        rotate: 90,
+        easing: 'linear',
+        duration: 1000,
+        offset: "-=3000",
+      })
     });
-    anime({
-      targets: '.cloison',
-      opacity: 0,
-      duration: 5000,
-      delay: 500,
-    })
+
     var tl = anime.timeline({
       targets: '.cloison',
       opacity: 0,
