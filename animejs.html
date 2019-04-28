@@ -105,8 +105,17 @@
   </div>
 
   <script>
+
+    // CONFIG PRESENTATION 
     let config = document.querySelector("#configPresentation")
     config.addEventListener("click", ()=> {
+      anime({
+        targets: '#fauteuil2',
+        duration: 0,
+        offset: 0,
+        rotate: 90,
+      });
+
       anime.timeline({})
       .add({
         targets: '.cloison',
@@ -198,15 +207,35 @@
         duration: 1000,
         offset: "-=1000",
       })
+
+      anime.timeline({})
       .add({
         targets: '#fauteuil2',
-        translateY: '-70px',
+        translateY: '-100px',
+        rotate: 180,
+        easing: 'linear',
+        duration: 1000,
+        delay: 1000,
+      })
+      .add({
+        targets: '#petiteTable2',
+        translateX: '450px',
         rotate: 90,
         easing: 'linear',
         duration: 1000,
-        offset: "-=3000",
+      })
+      .add({
+        targets: '#petiteTable1',
+        translateX: '300px',
+        rotate: 90,
+        easing: 'linear',
+        duration: 1000,
+        offset: "-=1000",
       })
     });
+
+    
+    // CONFIG REUNION
 
     var tl = anime.timeline({
       targets: '.cloison',
