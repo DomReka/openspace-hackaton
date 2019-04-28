@@ -35,15 +35,7 @@
       <img src="svg/cloison.svg" id="cloison6" class="cloison" />
       <img src="svg/cloisonVerticale.svg" id="cloison7" class="cloison" />
       <img src="svg/cloisonVerticale.svg" id="cloison8" class="cloison" />
-      <img src="svg/cloison.svg" id="cloison1" class="cloison"/>
-      <img src="svg/cloison.svg" id="cloison2" class="cloison"/>
-      <img src="svg/cloisonVerticale.svg" id="cloison3" class="cloison"/>
-      <img src="svg/cloisonVerticale.svg" id="cloison4" class="cloison"/>
 
-      <img src="svg/cloison.svg" id="cloison5" class="cloison"/>
-      <img src="svg/cloison.svg" id="cloison6" class="cloison"/>
-      <img src="svg/cloisonVerticale.svg" id="cloison7" class="cloison"/>
-      <img src="svg/cloisonVerticale.svg" id="cloison8" class="cloison"/>
 
       <img src="svg/grandeTable.svg" id="grandeTable1"/>
       <img src="svg/grandeTable.svg" id="grandeTable2"/>
@@ -58,9 +50,10 @@
       <img src="svg/cloison.svg" id="cloison9" class="cloison" />
       <img src="svg/cloison.svg" id="cloison10" class="cloison" />
       <img src="svg/cloison.svg" id="cloison11" class="cloison" />
-      <img src="svg/cloison.svg" id="cloison9" class="cloison"/>
-      <img src="svg/cloison.svg" id="cloison10" class="cloison"/>
-      <img src="svg/cloison.svg" id="cloison11" class="cloison"/>
+      <img src="svg/cloisonVerticale.svg" id="cloison12" class="cloisonsTr" />
+      <img src="svg/cloisonVerticale.svg" id="cloison13" class="cloisonsTr" />
+      <img src="svg/cloisonVerticale.svg" id="cloison14" class="cloisonsTr" />
+      <img src="svg/cloison.svg" id="cloison15" class="cloisonsTr" />
 
       <img src="svg/divan.svg" id="divan1" class="salon"/>
       <img src="svg/divan.svg" id="divan2" class="salon"/>
@@ -208,15 +201,18 @@
       })
     });
 
-    let tl = anime.timeline({
+  let travail = document.querySelector("#workBtn");
+    travail.addEventListener("click", ()=> {
+      anime.timeline({})
+      .add({
       targets: '.cloison',
       opacity: 0,
       duration: 1000,
       autoplay: false,
       easing: 'linear',
       autoplay: false,
-    });
-    tl.add([{
+    })
+      .add([{
         targets: '#grandeTable1',
         duration: 2000,
         offset: '-=2000',
@@ -304,15 +300,14 @@
         autoplay: false,
       },
       {
-        targets: '.cloison',
+        targets: '.cloisonsTr',
         opacity: 1,
-        duration: 3000,
-        offset: '-=2000',
-        delay: 4000,
-        easing: 'linear',
+        duration: 1500,
         autoplay: false,
-      }]);
-    document.querySelector('#workBtn').onclick = tl.play;
+        easing: 'linear',
+      }
+      ]);
+    });
 
   </script>
 
