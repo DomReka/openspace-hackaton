@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
   <link rel="stylesheet" href="./animejs.css">
-  <title>ta mère c'est de l'animejs</title>
+  <title>Flexbox</title>
+
 </head>
 <body>
   <div id="content">
@@ -36,7 +37,6 @@
       <img src="svg/cloisonVerticale.svg" id="cloison7" class="cloison" />
       <img src="svg/cloisonVerticale.svg" id="cloison8" class="cloison" />
 
-
       <img src="svg/grandeTable.svg" id="grandeTable1"/>
       <img src="svg/grandeTable.svg" id="grandeTable2"/>
       <img src="svg/grandeTable.svg" id="grandeTable3"/>
@@ -66,6 +66,10 @@
       <img src="svg/fauteuil.svg" id="fauteuil1" class="salon"/>
       <img src="svg/fauteuil.svg" id="fauteuil2" class="salon"/>
 
+      <!-- CLOISONS CONFIG PRESENTATION -->
+      <img src="svg/cloison.svg" id="cloison100" />
+      <img src="svg/cloison.svg" id="cloison101" />
+
     </div>
 
     <div class="elements">
@@ -94,222 +98,8 @@
             <img src="svg/fauteuil.svg" class="elementImage" />
         </div>
     </div>
-
   </div>
-
-  <script>
-    let config = document.querySelector("#configPresentation")
-    config.addEventListener("click", ()=> {
-      anime.timeline({})
-      .add({
-        targets: '.cloison',
-        opacity: 0,
-        easing: 'linear',
-        duration: 2000,
-      })
-      .add([{
-        targets: '#chaise1',
-        translateX: '150px',
-        easing: 'linear',
-        duration: 1000,
-      }, {
-        targets: '#chaise2',
-        translateX: '-150px',
-        easing: 'linear',
-        duration: 1000,
-        offset: "-=1000",
-      }, {
-        targets: '#chaise3',
-        translateX: '225px',
-        easing: 'linear',
-        duration: 1000,
-        offset: "-=1000",
-      }, {
-        targets: '#chaise4',
-        translateX: '-225px',
-        easing: 'linear',
-        duration: 1000,
-        offset: "-=1000",
-      }, {
-        targets: '#chaise3',
-        translateX: '225px',
-        translateY: '-250px',
-        easing: 'linear',
-        duration: 1000,
-      }, {
-        targets: '#chaise4',
-        translateX: '-225px',
-        translateY: '-250px',
-        easing: 'linear',
-        duration: 1000,
-        offset: "-=1000",
-      }])
-      .add([{
-        targets: ['#grandeTable1', '#grandeTable3'],
-        rotate: -90,
-        easing: 'linear',
-        duration: 2000,
-      },{
-        targets: ['#grandeTable2', '#grandeTable4'],
-        rotate: 90,
-        easing: 'linear',
-        duration: 2000,
-        offset: "-=2000",
-      }])
-      .add({
-        targets: '#grandeTable1',
-        translateX: '-70px',
-        translateY: '-10px',
-        rotate: -90,
-        easing: 'linear',
-        duration: 1000,
-      })
-      .add({
-        targets: '#grandeTable2',
-        translateX: '70px',
-        translateY: '-10px',
-        rotate: 90,
-        easing: 'linear',
-        duration: 1000,
-        offset: "-=1000",
-      })
-      .add({
-        targets: '#grandeTable3',
-        translateX: '-70px',
-        translateY: '-70px',
-        rotate: -90,
-        easing: 'linear',
-        duration: 1000,
-        offset: "-=1000",
-      })
-      .add({
-        targets: '#grandeTable4',
-        translateX: '70px',
-        translateY: '-70px',
-        rotate: 90,
-        easing: 'linear',
-        duration: 1000,
-        offset: "-=1000",
-      })
-      .add({
-        targets: '#fauteuil2',
-        translateY: '-70px',
-        rotate: 90,
-        easing: 'linear',
-        duration: 1000,
-        offset: "-=3000",
-      })
-    });
-
-  let travail = document.querySelector("#workBtn");
-    travail.addEventListener("click", ()=> {
-      anime.timeline({})
-      .add({
-      targets: '.cloison',
-      opacity: 0,
-      duration: 1000,
-      autoplay: false,
-      easing: 'linear',
-      autoplay: false,
-    })
-      .add([{
-        targets: '#grandeTable1',
-        duration: 2000,
-        offset: '-=2000',
-        delay: 2000,
-        translateX: '25px',
-        rotate: 90,
-        easing: 'linear', 
-        autoplay: false,
-      },
-      {
-        targets: '#grandeTable2',
-        duration: 2000,
-        offset: '-=2000',
-        translateX: '-425px',
-        rotate: -90,
-        easing: 'linear',
-        autoplay: false,
-      },
-      {
-        targets: '#grandeTable3',
-        duration: 2000,
-        offset: '-=2000',
-        translateY: '-50px',
-        translateX: '25px',
-        rotate: 90,
-        easing: 'linear', 
-        autoplay: false,
-      },
-      {
-        targets: '#grandeTable4',
-        duration: 2000,
-        offset: '-=2000',
-        translateY: '-50px',
-        translateX: '-425px',
-        rotate: -90,
-        easing: 'linear',
-        autoplay: false,
-      },
-      {
-        targets: '#chaise1',
-        duration: 2000,
-        offset: '-=2000',
-        translateX: '-60px',
-        translateY: -100,
-        rotate: 90,
-        easing: 'linear', 
-        autoplay: false,
-      },
-      {
-        targets: '#chaise2',
-        duration: 2000,
-        offset: '-=2000',
-        translateX: '-350px',
-        translateY: -100,
-        rotate: -90,
-        easing: 'linear',
-        autoplay: false,
-      },
-      {
-        targets: '#chaise3',
-        duration: 2000,
-        offset: '-=2000',
-        translateX: -60,
-        translateY: -150,
-        rotate: 90,
-        easing: 'linear', 
-        autoplay: false,
-      },
-      {
-        targets: '#chaise4',
-        duration: 2000,
-        offset: '-=2000',
-        translateY: -150,
-        translateX: -350,
-        rotate: -90,
-        easing: 'linear',
-        autoplay: false,
-      },
-      {
-        targets: '.salon',
-        translateX: "300px",
-        offset: '-=2000',
-        duration: 2000,
-        easing: 'linear',
-        autoplay: false,
-      },
-      {
-        targets: '.cloisonsTr',
-        opacity: 1,
-        duration: 1500,
-        autoplay: false,
-        easing: 'linear',
-      }
-      ]);
-    });
-
-  </script>
+  <script src="travail.js"></script>
 
 </body>
 </html>

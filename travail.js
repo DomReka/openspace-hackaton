@@ -1,0 +1,110 @@
+
+ let travail = document.querySelector("#workBtn");
+    travail.addEventListener("click", ()=> {
+      anime.timeline({})
+      .add({
+      targets: '.cloison',
+      opacity: 0,
+      duration: 1000,
+      autoplay: false,
+      easing: 'linear',
+      autoplay: false,
+    })
+    .add([{
+      targets: '#grandeTable1',
+      duration: 2000,
+      offset: '-=2000',
+      delay: 2000,
+      translateX: '25px',
+      rotate: 90,
+      easing: 'linear', 
+      autoplay: false,
+    },
+    {
+      targets: '#grandeTable2',
+      duration: 2000,
+      offset: '-=2000',
+      translateX: '-425px',
+      rotate: -90,
+      easing: 'linear',
+      autoplay: false,
+    },
+    {
+      targets: '#grandeTable3',
+      duration: 2000,
+      offset: '-=2000',
+      translateY: '-50px',
+      translateX: '25px',
+      rotate: 90,
+      easing: 'linear', 
+      autoplay: false,
+    },   
+    {
+      targets: '#grandeTable4',
+      duration: 2000,
+      offset: '-=2000',
+      translateY: '-50px',
+      translateX: '-425px',
+      rotate: -90,
+      easing: 'linear',
+      autoplay: false,
+    },
+    {
+      targets: '#chaise1',
+      duration: 2000,
+      offset: '-=2000',
+      translateX: '-60px',
+      translateY: -100,
+      rotate: 90,
+      easing: 'linear', 
+      autoplay: false,
+    },
+    {
+      targets: '#chaise2',
+      duration: 2000,
+      offset: '-=2000',
+      translateX: '-350px',
+      translateY: -100,
+      rotate: -90,
+      easing: 'linear',
+      autoplay: false,
+    },
+    {
+      targets: '#chaise3',
+      duration: 2000,
+      offset: '-=2000',
+      translateX: -60,
+      translateY: -150,
+      rotate: 90,
+      easing: 'linear', 
+      autoplay: false,
+    },
+    {
+      targets: '#chaise4',
+      duration: 2000,
+      offset: '-=2000',
+      translateY: -150,
+      translateX: -350,
+      rotate: -90,
+      easing: 'linear',
+      autoplay: false,
+    },
+    {
+      targets: '.salon',
+      translateX: "300px",
+      offset: '-=2000',
+      duration: 2000,
+      easing: 'linear',
+      autoplay: false,
+    },
+    {
+      targets: '.cloisonsTr',
+      opacity: 1,
+      duration: 1500,
+      autoplay: false,
+      easing: 'linear',
+    }
+  ]);
+});
+
+
