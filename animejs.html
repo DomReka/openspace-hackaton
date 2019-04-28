@@ -207,25 +207,26 @@
         offset: "-=3000",
       })
     });
-    
+
     let tl = anime.timeline({
       targets: '.cloison',
       opacity: 0,
-      duration: 2000,
+      duration: 1000,
       autoplay: false,
       easing: 'linear',
       autoplay: false,
     });
-    tl.add({
+    tl.add([{
         targets: '#grandeTable1',
         duration: 2000,
-        delay: 4444000,
+        offset: '-=2000',
+        delay: 2000,
         translateX: '25px',
         rotate: 90,
         easing: 'linear', 
         autoplay: false,
-      })
-      .add({
+      },
+      {
         targets: '#grandeTable2',
         duration: 2000,
         offset: '-=2000',
@@ -233,8 +234,8 @@
         rotate: -90,
         easing: 'linear',
         autoplay: false,
-      })
-      .add({
+      },
+      {
         targets: '#grandeTable3',
         duration: 2000,
         offset: '-=2000',
@@ -243,18 +244,18 @@
         rotate: 90,
         easing: 'linear', 
         autoplay: false,
-      })
-      .add({
+      },
+      {
         targets: '#grandeTable4',
         duration: 2000,
-        offset: '-=1800',
+        offset: '-=2000',
         translateY: '-50px',
         translateX: '-425px',
         rotate: -90,
         easing: 'linear',
         autoplay: false,
-      })
-      .add({
+      },
+      {
         targets: '#chaise1',
         duration: 2000,
         offset: '-=2000',
@@ -263,8 +264,8 @@
         rotate: 90,
         easing: 'linear', 
         autoplay: false,
-      })
-      .add({
+      },
+      {
         targets: '#chaise2',
         duration: 2000,
         offset: '-=2000',
@@ -273,8 +274,8 @@
         rotate: -90,
         easing: 'linear',
         autoplay: false,
-      })
-      .add({
+      },
+      {
         targets: '#chaise3',
         duration: 2000,
         offset: '-=2000',
@@ -283,8 +284,8 @@
         rotate: 90,
         easing: 'linear', 
         autoplay: false,
-      })
-      .add({
+      },
+      {
         targets: '#chaise4',
         duration: 2000,
         offset: '-=2000',
@@ -293,16 +294,16 @@
         rotate: -90,
         easing: 'linear',
         autoplay: false,
-      })
-      .add({
+      },
+      {
         targets: '.salon',
         translateX: "300px",
         offset: '-=2000',
         duration: 2000,
         easing: 'linear',
         autoplay: false,
-      })
-      .add({
+      },
+      {
         targets: '.cloison',
         opacity: 1,
         duration: 3000,
@@ -310,7 +311,7 @@
         delay: 4000,
         easing: 'linear',
         autoplay: false,
-      });
+      }]);
     document.querySelector('#workBtn').onclick = tl.play;
 
   </script>
