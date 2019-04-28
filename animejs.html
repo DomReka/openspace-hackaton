@@ -35,15 +35,6 @@
       <img src="svg/cloison.svg" id="cloison6" class="cloison" />
       <img src="svg/cloisonVerticale.svg" id="cloison7" class="cloison" />
       <img src="svg/cloisonVerticale.svg" id="cloison8" class="cloison" />
-      <img src="svg/cloison.svg" id="cloison1" class="cloison"/>
-      <img src="svg/cloison.svg" id="cloison2" class="cloison"/>
-      <img src="svg/cloisonVerticale.svg" id="cloison3" class="cloison"/>
-      <img src="svg/cloisonVerticale.svg" id="cloison4" class="cloison"/>
-
-      <img src="svg/cloison.svg" id="cloison5" class="cloison"/>
-      <img src="svg/cloison.svg" id="cloison6" class="cloison"/>
-      <img src="svg/cloisonVerticale.svg" id="cloison7" class="cloison"/>
-      <img src="svg/cloisonVerticale.svg" id="cloison8" class="cloison"/>
 
       <img src="svg/grandeTable.svg" id="grandeTable1"/>
       <img src="svg/grandeTable.svg" id="grandeTable2"/>
@@ -58,9 +49,6 @@
       <img src="svg/cloison.svg" id="cloison9" class="cloison" />
       <img src="svg/cloison.svg" id="cloison10" class="cloison" />
       <img src="svg/cloison.svg" id="cloison11" class="cloison" />
-      <img src="svg/cloison.svg" id="cloison9" class="cloison"/>
-      <img src="svg/cloison.svg" id="cloison10" class="cloison"/>
-      <img src="svg/cloison.svg" id="cloison11" class="cloison"/>
 
       <img src="svg/divan.svg" id="divan1" class="salon"/>
       <img src="svg/divan.svg" id="divan2" class="salon"/>
@@ -72,6 +60,10 @@
 
       <img src="svg/fauteuil.svg" id="fauteuil1" class="salon"/>
       <img src="svg/fauteuil.svg" id="fauteuil2" class="salon"/>
+
+      <!-- CLOISONS CONFIG PRESENTATION -->
+      <img src="svg/cloison.svg" id="cloison100" />
+      <img src="svg/cloison.svg" id="cloison101" />
 
     </div>
 
@@ -114,6 +106,24 @@
         duration: 0,
         offset: 0,
         rotate: 90,
+      });
+      anime({
+        targets: ['#divan3', '#divan4'],
+        duration: 0,
+        offset: 0,
+        rotate: 180,
+      });
+      anime({
+        targets: '#fauteuil1',
+        duration: 0,
+        offset: 0,
+        rotate: "-90",
+      });
+      anime({
+        targets: ['#cloison100', '#cloison101'],
+        duration: 0,
+        offset: 0,
+        opacity: 0,
       });
 
       anime.timeline({})
@@ -208,144 +218,192 @@
         offset: "-=1000",
       })
 
+
       anime.timeline({})
+      .add({
+        targets: '#fauteuil1',
+        translateY: '-100px',
+        rotate: -180,
+        easing: 'linear',
+        duration: 1000,
+        delay: 1000,
+      })
       .add({
         targets: '#fauteuil2',
         translateY: '-100px',
         rotate: 180,
         easing: 'linear',
         duration: 1000,
-        delay: 1000,
+        offset: "-=1000",
       })
       .add({
         targets: '#petiteTable2',
         translateX: '420px',
+        translateY: '80px',
         rotate: 90,
         easing: 'linear',
-        duration: 1000,
+        duration: 2000,
       })
       .add({
         targets: '#petiteTable1',
-        translateX: '300px',
+        translateX: '600px',
+        translateY: '-20px',
         rotate: 90,
+        easing: 'linear',
+        duration: 3000,
+        offset: "-=2000",
+      })
+      .add({
+        targets: '#fauteuil2',
+        translateX: '160px',
+        translateY: '-420px',
+        rotate: 180,
+        easing: 'linear',
+        duration: 2000,
+        delay: 2000,
+      })
+      .add({
+        targets: '#fauteuil1',
+        translateY: '-420px',
+        translateX: '160px',
+        rotate: -180,
+        easing: 'linear',
+        duration: 2000,
+        offset: "-=2000",
+      })
+      .add({
+        targets: ['#divan1', '#divan2'],
+        translateX: '50px',
+        translateY: '-250px',
+        rotate: -180,
+        easing: 'linear',
+        duration: 3000,
+        offset: "-=2000",
+      })
+      .add({
+        targets: ['#divan3', '#divan4'],
+        translateX: '230px',
+        translateY: '-330px',
+        rotate: 180,
+        easing: 'linear',
+        duration: 3000,
+        offset: "-=2000",
+      })
+      .add({
+        targets: ['#cloison100', '#cloison101'],
+        opacity: 1,
         easing: 'linear',
         duration: 1000,
-        offset: "-=1000",
       })
     });
-<<<<<<< HEAD
 
-    
+
     // CONFIG REUNION
-
-    var tl = anime.timeline({
-=======
     
-    let tl = anime.timeline({
->>>>>>> 1b078285f1c2d6c90edb2444ac776117ead4586e
-      targets: '.cloison',
-      opacity: 0,
-      duration: 2000,
-      autoplay: false,
-      easing: 'linear',
-      autoplay: false,
-    });
-    tl.add({
-        targets: '#grandeTable1',
-        duration: 2000,
-        delay: 4444000,
-        translateX: '25px',
-        rotate: 90,
-        easing: 'linear', 
-        autoplay: false,
-      })
-      .add({
-        targets: '#grandeTable2',
-        duration: 2000,
-        offset: '-=2000',
-        translateX: '-425px',
-        rotate: -90,
-        easing: 'linear',
-        autoplay: false,
-      })
-      .add({
-        targets: '#grandeTable3',
-        duration: 2000,
-        offset: '-=2000',
-        translateY: '-50px',
-        translateX: '25px',
-        rotate: 90,
-        easing: 'linear', 
-        autoplay: false,
-      })
-      .add({
-        targets: '#grandeTable4',
-        duration: 2000,
-        offset: '-=1800',
-        translateY: '-50px',
-        translateX: '-425px',
-        rotate: -90,
-        easing: 'linear',
-        autoplay: false,
-      })
-      .add({
-        targets: '#chaise1',
-        duration: 2000,
-        offset: '-=2000',
-        translateX: '-60px',
-        translateY: -100,
-        rotate: 90,
-        easing: 'linear', 
-        autoplay: false,
-      })
-      .add({
-        targets: '#chaise2',
-        duration: 2000,
-        offset: '-=2000',
-        translateX: '-350px',
-        translateY: -100,
-        rotate: -90,
-        easing: 'linear',
-        autoplay: false,
-      })
-      .add({
-        targets: '#chaise3',
-        duration: 2000,
-        offset: '-=2000',
-        translateX: -60,
-        translateY: -150,
-        rotate: 90,
-        easing: 'linear', 
-        autoplay: false,
-      })
-      .add({
-        targets: '#chaise4',
-        duration: 2000,
-        offset: '-=2000',
-        translateY: -150,
-        translateX: -350,
-        rotate: -90,
-        easing: 'linear',
-        autoplay: false,
-      })
-      .add({
-        targets: '.salon',
-        translateX: "300px",
-        offset: '-=2000',
-        duration: 2000,
-        easing: 'linear',
-        autoplay: false,
-      })
-      .add({
-        targets: '.cloison',
-        opacity: 1,
-        duration: 3000,
-        offset: '-=2000',
-        delay: 4000,
-        easing: 'linear',
-        autoplay: false,
-      });
-    document.querySelector('#workBtn').onclick = tl.play;
+    // let tl = anime.timeline({
+    //   targets: '.cloison',
+    //   opacity: 0,
+    //   duration: 2000,
+    //   autoplay: false,
+    //   easing: 'linear',
+    //   autoplay: false,
+    // });
+    // tl.add({
+    //     targets: '#grandeTable1',
+    //     duration: 2000,
+    //     delay: 4444000,
+    //     translateX: '25px',
+    //     rotate: 90,
+    //     easing: 'linear', 
+    //     autoplay: false,
+    //   })
+    //   .add({
+    //     targets: '#grandeTable2',
+    //     duration: 2000,
+    //     offset: '-=2000',
+    //     translateX: '-425px',
+    //     rotate: -90,
+    //     easing: 'linear',
+    //     autoplay: false,
+    //   })
+    //   .add({
+    //     targets: '#grandeTable3',
+    //     duration: 2000,
+    //     offset: '-=2000',
+    //     translateY: '-50px',
+    //     translateX: '25px',
+    //     rotate: 90,
+    //     easing: 'linear', 
+    //     autoplay: false,
+    //   })
+    //   .add({
+    //     targets: '#grandeTable4',
+    //     duration: 2000,
+    //     offset: '-=1800',
+    //     translateY: '-50px',
+    //     translateX: '-425px',
+    //     rotate: -90,
+    //     easing: 'linear',
+    //     autoplay: false,
+    //   })
+    //   .add({
+    //     targets: '#chaise1',
+    //     duration: 2000,
+    //     offset: '-=2000',
+    //     translateX: '-60px',
+    //     translateY: -100,
+    //     rotate: 90,
+    //     easing: 'linear', 
+    //     autoplay: false,
+    //   })
+    //   .add({
+    //     targets: '#chaise2',
+    //     duration: 2000,
+    //     offset: '-=2000',
+    //     translateX: '-350px',
+    //     translateY: -100,
+    //     rotate: -90,
+    //     easing: 'linear',
+    //     autoplay: false,
+    //   })
+    //   .add({
+    //     targets: '#chaise3',
+    //     duration: 2000,
+    //     offset: '-=2000',
+    //     translateX: -60,
+    //     translateY: -150,
+    //     rotate: 90,
+    //     easing: 'linear', 
+    //     autoplay: false,
+    //   })
+    //   .add({
+    //     targets: '#chaise4',
+    //     duration: 2000,
+    //     offset: '-=2000',
+    //     translateY: -150,
+    //     translateX: -350,
+    //     rotate: -90,
+    //     easing: 'linear',
+    //     autoplay: false,
+    //   })
+    //   .add({
+    //     targets: '.salon',
+    //     translateX: "300px",
+    //     offset: '-=2000',
+    //     duration: 2000,
+    //     easing: 'linear',
+    //     autoplay: false,
+    //   })
+    //   .add({
+    //     targets: '.cloison',
+    //     opacity: 1,
+    //     duration: 3000,
+    //     offset: '-=2000',
+    //     delay: 4000,
+    //     easing: 'linear',
+    //     autoplay: false,
+    //   });
+    // document.querySelector('#workBtn').onclick = tl.play;
 
   </script>
 
