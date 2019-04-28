@@ -1,13 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 #content {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-image: url('./what-the-hex.png');
 }
 
 .config {
   border: none;
   margin: 1rem;
+  border-radius: 1rem;
 }
 
 .config:hover {
@@ -22,6 +28,7 @@
   height: 800px;
   grid-template-columns: repeat(40, 20px);
   grid-template-rows: repeat(40, 20px);
+  border-radius: 1rem;
 }
 
 .elements {
@@ -30,6 +37,7 @@
   flex-direction: column;
   margin: 2rem;
   padding: 1rem;
+  border-radius: 1rem;
 }
 
 .element {

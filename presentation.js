@@ -119,7 +119,7 @@
         offset: "-=500",
       })
       .add({
-        duration: 6000/2,
+        duration: 3500,
       })
     
     
@@ -200,6 +200,9 @@
         opacity: 1,
         easing: 'linear',
         duration: 1000/2,
+      })
+      .add({
+        duration: 500,
       })
 }
 
