@@ -1,7 +1,7 @@
  // CONFIG REPAS MIDI
 
- let config = document.querySelector("#configRepasMidi")
- config.addEventListener("click", ()=> {
+ let repas = document.querySelector("#configRepasMidi")
+ repas.addEventListener("click", ()=> {
    anime({
      targets: '#fauteuil2',
      duration: 0,

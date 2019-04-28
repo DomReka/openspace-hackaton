@@ -141,6 +141,31 @@
   grid-row: 28;
 }
 
+#cloison12 {
+  opacity: 0;
+  grid-column: 21;
+  grid-row: 2;
+}
+
+#cloison13 {
+  opacity: 0;
+  grid-column: 21;
+  grid-row: 12;
+}
+
+#cloison14 {
+  opacity: 0;
+  grid-column: 16;
+  grid-row: 20;
+  transform: rotate(65deg);
+}
+
+#cloison15 {
+  opacity: 0;
+  grid-column: 1;
+  grid-row: 27;
+}
+
 #divan1 {
   grid-column: 5;
   grid-row: 29;

@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
   <link rel="stylesheet" href="./animejs.css">
-  <title>ta mère c'est de l'animejs</title>
+  <title>Flexbox</title>
+
 </head>
 <body>
   <div id="content">
 
       <div class="elements">
           <h2>Configurations</h2>
-          <button class="config" id="workBtn">
+          <button id="configTravail" class="config">
             Travail
             </button>
-          <button class="config">
+          <button id="workBtn" class="config">
             Réunion
           </button>
           <button id="configRepasMidi" class="config">
@@ -49,17 +50,21 @@
       <img src="svg/cloison.svg" id="cloison9" class="cloison" />
       <img src="svg/cloison.svg" id="cloison10" class="cloison" />
       <img src="svg/cloison.svg" id="cloison11" class="cloison" />
+      <img src="svg/cloisonVerticale.svg" id="cloison12" class="cloisonsTr" />
+      <img src="svg/cloisonVerticale.svg" id="cloison13" class="cloisonsTr" />
+      <img src="svg/cloisonVerticale.svg" id="cloison14" class="cloisonsTr" />
+      <img src="svg/cloison.svg" id="cloison15" class="cloisonsTr" />
 
       <img src="svg/divan.svg" id="divan1" class="salon"/>
       <img src="svg/divan.svg" id="divan2" class="salon"/>
-      <img src="svg/divan.svg" id="divan3" class="salon"/>
-      <img src="svg/divan.svg" id="divan4" class="salon"/>
+      <img src="svg/divan.svg" id="divan3" />
+      <img src="svg/divan.svg" id="divan4" />
 
       <img src="svg/petiteTable.svg" id="petiteTable1" class="salon"/>
       <img src="svg/petiteTable.svg" id="petiteTable2" class="salon" />
 
-      <img src="svg/fauteuil.svg" id="fauteuil1" class="salon"/>
-      <img src="svg/fauteuil.svg" id="fauteuil2" class="salon"/>
+      <img src="svg/fauteuil.svg" id="fauteuil1" />
+      <img src="svg/fauteuil.svg" id="fauteuil2" />
 
       <!-- CLOISONS CONFIG PRESENTATION -->
       <img src="svg/cloison.svg" id="cloison100" />
@@ -93,11 +98,17 @@
             <img src="svg/fauteuil.svg" class="elementImage" />
         </div>
     </div>
-
   </div>
-
   <script src="presentation.js"></script>
   <script src="repasMidi.js"></script>
+  <script src="reunion.js"></script>
+
+  <script>
+    let cTravail = document.querySelector("#configTravail")
+    cTravail.addEventListener("click", ()=> {
+      presentation("reverse");
+    });
+  </script>
 
 </body>
 </html>
