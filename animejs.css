@@ -188,13 +188,13 @@
 
 /* CLOISONS CONFIG PRESENTATION */
 #cloison100 {
-  grid-column: 10;
+  grid-column: 11;
   grid-row: 4;
   opacity: 0;
 }
 
 #cloison101 {
-  grid-column: 20;
+  grid-column: 21;
   grid-row: 4;
   opacity: 0;
 }
